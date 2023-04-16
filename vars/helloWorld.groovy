@@ -1,4 +1,3 @@
-//def call(Map config = [:]) {
-def call(String name, String dayOfWeek) {
-    sh "echo Hello ${name}. Today is ${dayOfWeek}."
+def call(Map config = [:]) {  //Define an empty map to pass variables
+    sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
 }
